@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/RealTimeCommunication/v16
+/RealTimeCommunication/bin/Debug/netcoreapp3.1
+/RealTimeCommunication/obj

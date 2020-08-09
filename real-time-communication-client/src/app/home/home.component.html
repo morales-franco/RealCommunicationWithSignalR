@@ -1,0 +1,35 @@
+<div class="row">
+
+    <div class="col-md-12">
+
+
+        <div class="card">
+            <div class="card-header">
+              User:  <input class="form-control" [(ngModel)]="user" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Mensajes</h5>
+              <p class="card-text" *ngFor="let message of messages" >{{ message.user }}: {{ message.body }}</p>
+
+
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                    <div class="col-md-10">
+                        <input class="form-control" id= "message" placeholder="Escriba mensaje" [(ngModel)]="message" />
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-primary" (click)="sendMessage()">Send SignalR</button>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-success" (click)="sendViaApi()">Send Api</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+    </div>
+
+
+
+</div>
